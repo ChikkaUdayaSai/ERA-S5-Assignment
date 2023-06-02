@@ -1,6 +1,6 @@
 # ERA S5 Assignment
 
-This repository contains the solution to the assignment given in The School of AI's ERA Program Session 5. The solution uses PyTorch to train a convolutional neural network on the MNIST dataset. The trained model achieves an accuracy of 90% on the test dataset. The code is well-documented and can be easily extended to other datasets and models.
+This repository contains the solution to the assignment given in The School of AI's ERA Program Session 5. The solution uses PyTorch to train a convolutional neural network on the MNIST dataset. The trained model achieves an accuracy of 99.15% on the test dataset. The code is well-documented and can be easily extended to other datasets and models.
 
 
 ## Pre-requisites
@@ -190,5 +190,10 @@ def predict(image_path):
     return predicted.item()
 ```
 
+For example, an image with location test.png can be passed to the predict function as follows:
 
+```python
+predicted_class = predict('test.png')
+print(predicted_class)
+```
 
