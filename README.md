@@ -1,6 +1,6 @@
 # ERA S5 Assignment
 
-This repository contains the solution to the assignment given in The School of AI's ERA Program Session 5. The solution uses PyTorch to train a convolutional neural network on the MNIST dataset. The trained model achieves an accuracy of 99.15% on the test dataset. The code is well-documented and can be easily extended to other datasets and models.
+This repository contains the solution to the assignment given in The School of AI's ERA Program Session 5. The solution uses PyTorch to train a convolutional neural network on the MNIST dataset. The trained model achieves an accuracy of 99.33% on the test dataset. The code is well-documented and can be easily extended to other datasets and models.
 
 
 ## Pre-requisites
@@ -59,9 +59,9 @@ We are now ready to run the code with the following versions of the dependencies
 
 The project contains three files:
 
-1. utils.py: Contains the code for fetching the MNIST dataset and preprocessing it.
+1. utils.py: Contains the code for some utility functions such as train, test, a function to check number of correct predictions and a function to plot the training and validation losses.
 2. model.py: Contains the code for defining the model architecture.
-3. S5.ipynb: Contains the code for training the model and plotting the training and validation losses.
+3. S5.ipynb: This is the main file which reads the data, trains the model and tests the model. It also plots the training and validation losses using the plot_losses function defined in utils.py.
 
 Open the S5.ipynb file in Jupyter Notebook and run the cells to train the model. It is recommended to run the code on a GPU for faster training. The code can be run on a CPU as well, but it will take a longer time to train the model.
 
@@ -145,7 +145,7 @@ The total number of parameters in the model is 5,93,200 and the total number of 
 
 ## Training and Validation Losses
 
-The training and validation losses are plotted in the S5.ipynb file. The model achieves a training accuracy of 99.16% and testing accuracy of 99.15% in 20 epochs. The model achieves a maximum training accuracy of 99.17% in the 18th epoch and a maximum testing accuracy of 99.15% in the 20th epoch. The losses and accuracies are plotted below:
+The training and validation losses are plotted in the S5.ipynb file. The model achieves a training accuracy of 99.23% and testing accuracy of 99.33% in 20 epochs. The model achieves a maximum training accuracy of 99.23% in the 20th epoch and a maximum testing accuracy of 99.33% in the 20th epoch. The losses and accuracies are plotted below:
 
 ![Losses](assets/results.png)
 
@@ -196,4 +196,3 @@ For example, an image with location test.png can be passed to the predict functi
 predicted_class = predict('test.png')
 print(predicted_class)
 ```
-
