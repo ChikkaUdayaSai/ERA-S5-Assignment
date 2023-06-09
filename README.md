@@ -147,7 +147,7 @@ The total number of parameters in the model is 5,93,200 and the total number of 
 
 The training and validation losses are plotted in the S5.ipynb file. The model achieves a training accuracy of 99.23% and testing accuracy of 99.33% in 20 epochs. The model achieves a maximum training accuracy of 99.23% in the 20th epoch and a maximum testing accuracy of 99.33% in the 20th epoch. The losses and accuracies are plotted below:
 
-![Losses](assets/results.png)
+![Losses](https://user-images.githubusercontent.com/38718218/244776764-61b1ea18-90e4-434a-bcd8-21258060e73c.png)
 
 
 ## Test Against Custom Images
